@@ -42,9 +42,9 @@ if [ "$1" = 'ts3server' ]; then
 	file_env 'TS3SERVER_DB_USER'
 	file_env 'TS3SERVER_DB_PASSWORD'
 	file_env 'TS3SERVER_DB_NAME'
-	file_env 'TS3Server_VOCIE_PORT'
-	file_env 'TS3Server_QUERY_PORT'
-	file_env 'TS3Server_FILETRANSFER_PORT'
+	file_env 'TS3SERVER_VOCIE_PORT'
+	file_env 'TS3SERVER_QUERY_PORT'
+	file_env 'TS3SERVER_FILETRANSFER_PORT'
 	
 	cat <<- EOF >/var/run/ts3server/ts3server.ini
 		licensepath=${TS3SERVER_LICENSEPATH}
